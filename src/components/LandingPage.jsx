@@ -108,7 +108,7 @@ export default function UrlShortener() {
                                             className="w-10 h-10 rounded-full border-2 border-gray-300"
                                         />
                                         <div className="flex flex-col">
-                                            <p className="text-sm font-semibold text-gray-800">{user.name}</p>
+                                            <p className="text-sm font-semibold text-gray-800">{user.displayName}</p>
                                             <p className="text-xs text-gray-500">{user.email}</p>
                                         </div>
                                     </div>
@@ -147,7 +147,7 @@ export default function UrlShortener() {
                                             alt="Profile"
                                             className="w-12 h-12 rounded-full border-2 border-gray-300"
                                         />
-                                        <p className="text-sm font-semibold text-gray-800 mt-2">{user.name}</p>
+                                        <p className="text-sm font-semibold text-gray-800 mt-2">{user.displayName}</p>
                                         <p className="text-xs text-gray-500">{user.email}</p>
                                     </div>
                                     <Button variant="danger" className="w-full" onClick={handleLogout}>
